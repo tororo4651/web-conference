@@ -1,0 +1,25 @@
+// 変数
+
+// カラー
+
+
+
+// 幅
+
+
+
+// ブレイクポイント
+$breakpoints: (
+  'xs-min': '(min-width: 375px)',
+  'xs-max': '(max-width: 374px)',
+  'sm-min': '(min-width: 600px)',
+  'sm-max': '(max-width: 599px)',
+  'md-min': '(min-width: 768px)',
+  'md-max': '(max-width: 767px)',
+  'lg-min': '(min-width: 1024px)',
+  'lg-max': '(max-width: 1023px)',
+  'xl-min': '(min-width: 1200px)',
+  'xl-max': '(max-width: 1199px)',
+  'xxl-min': '(min-width: 1366px)',
+  'xxl-max': '(max-width: 1365px)'
+);

@@ -1,0 +1,12 @@
+// アニメーション・フェードアップ
+
+.fadeUp {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.is-fadeUpOn {
+  transform: translateY(0);
+  opacity: 1;
+}

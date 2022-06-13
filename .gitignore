@@ -1,0 +1,10 @@
+# ディレクトリ
+node_modules
+dist
+
+
+# ファイル
+.DS_Store
+Thumbs.db
+package-lock.json
+web-conference.code-workspace
