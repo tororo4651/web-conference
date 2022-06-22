@@ -1,0 +1,41 @@
+// CSSカスタムプロパティ・CSS変数・カスケード変数
+
+
+// レスポンシブサイズ
+*,
+*::before,
+*::after {
+  /* 最小サイズ、最大サイズ、最小画面幅、最大画面幅 */
+  --min-viewport: 375;
+  --max-viewport: 600;
+
+  /* a 傾き */
+  --slope: calc((var(--max-size) - var(--min-size)) / (var(--max-viewport) - var(--min-viewport)));
+
+  /* b 切片 */
+  --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
+
+  /* y = ax + b 可変サイズ */
+  --fluid-size: calc(var(--slope) * 100vw + var(--intercept) / 16 * 1rem);
+
+  /* clamp(最小サイズ, 可変サイズ, 最大サイズ) */
+  --clamp-size: clamp(var(--min-size) / 16 * 1rem, var(--fluid-size), var(--max-size) / 16 * 1rem);
+
+
+  /* 02 */
+  /* 最小サイズ、最大サイズ、最小画面幅、最大画面幅 */
+  --min-viewport02: 375;
+  --max-viewport02: 600;
+
+  /* a 傾き */
+  --slope02: calc((var(--max-size02) - var(--min-size02)) / (var(--max-viewport02) - var(--min-viewport02)));
+
+  /* b 切片 */
+  --intercept02: calc(var(--min-size02) - var(--slope02) * var(--min-viewport02));
+
+  /* y = ax + b 可変サイズ */
+  --fluid-size02: calc(var(--slope02) * 100vw + var(--intercept02) / 16 * 1rem);
+
+  /* clamp(最小サイズ, 可変サイズ, 最大サイズ) */
+  --clamp-size02: clamp(var(--min-size02) / 16 * 1rem, var(--fluid-size02), var(--max-size02) / 16 * 1rem);
+}

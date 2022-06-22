@@ -3,3 +3,24 @@
 
 // 変数、ミックスイン、関数
 @use "../../global" as g;
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #333;
+
+  &__inner {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: Impact, sans-serif;
+    font-size: 1.5rem;
+  }
+}

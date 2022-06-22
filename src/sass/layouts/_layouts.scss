@@ -3,3 +3,11 @@
 
 // 変数、ミックスイン、関数
 @use "../global" as g;
+
+
+// コンテナ
+.l-container {
+  max-width: 800px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}

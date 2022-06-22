@@ -1,0 +1,47 @@
+// ヒーローイメージ
+
+
+// 変数、ミックスイン、関数
+@use "../../../global" as g;
+
+
+.hero {
+  height: calc(100vh - 60px);
+  background-image: url(/images/hero.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: screen;
+  animation-name: colorChange;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: center;
+  }
+
+  &__heading {
+    --min-size: 56;
+    --max-size: 110;
+    text-align: center;
+    font-size: var(--clamp-size);
+    font-family: Impact, sans-serif;
+  }
+
+  &__dateTime {
+    --min-size: 24;
+    --max-size: 48;
+    --min-size02: 16;
+    --max-size02: 20;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    padding-block: var(--clamp-size02);
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: var(--clamp-size);
+  }
+}

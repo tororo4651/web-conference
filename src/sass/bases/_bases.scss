@@ -5,13 +5,19 @@
 @use "../global/" as g;
 
 
-
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  font-family: sans-serif;
+  color: g.$textColor;
+}
+
+p {
+  line-height: 1.7;
 }
 
 ul,

@@ -3,17 +3,132 @@
 
 <%- include('components/common/_head.ejs', top) %>
 
-
 <body class="top">
 
+<%- include("components/common/_header.ejs") %>
 
 
+<section class="hero">
+  <div class="hero__inner l-container">
 
+    <h1 class="hero__heading">WCB Conference</h1>
 
+    <div class="hero__dateTime">
+      2021. 11. 7. 14:00 - 16:00
+    </div><!-- /.hero__datetime -->
 
+    <p class="p hero__text">オンラインで行っているWebサイト制作の勉強会、WCB Conference。 今回は最新のCSSテクニックとデザイントレンドを中心に紹介します。参加料金は無料！お気軽にご参加ください。</p>
 
+  </div><!-- /.hero__inner.l-container -->
+</section>
 
+<section class="section01">
+  <div class="section01_inner l-container">
 
+    <h2 class="section01__heading primaryHeading primaryHeading--orange">About</h2>
+
+    <p class="section01__text">WCB Conferenceとは、Webサイト制作を学びたい人たちが集まる勉強会です。オンラインで開催しているので、世界中どこにいても参加できます。最新のWebサイト制作やデザイントレンドを紹介し、それらの知識について参加者が話し合う時間も設けています。一人で勉強を続けるだけでなく、仲間と交流しながら新しい可能性を一緒に探していきましょう。</p>
+
+    <figure class="section01__figure">
+      <img class="section01__image" src="/images/computer.jpg" alt="写真：机の上のノートパソコン" width="1600" height="866">
+    </figure>
+
+  </div><!-- /.section01__inner.l-container -->
+</section>
+
+<section class="section02">
+  <div class="section02__inner l-container">
+
+    <h2 class="section02__heading primaryHeading primaryHeading--white">News</h2>
+
+    <table class="section02__table">
+      <tr class="section02__tableRow">
+        <td class="section02__tableData">
+          <time class="section02__tableDate" datetime="2021-10-16">2021年10月16日</time>
+        </td>
+        <td class="section02__tableData">参加登録を開始しました</td>
+      </tr>
+
+      <tr class="section02__tableRow">
+        <td class="section02__tableData">
+          <time class="section02__tableDate" datetime="2021-10-10">2021年10月10日</time>
+        </td>
+        <td class="section02__tableData">WCB Conferenceの登壇者が決定しました</td>
+      </tr>
+
+      <tr class="section02__tableRow">
+        <td class="section02__tableData">
+          <time class="section02__tableDate" datetime="2021-10-02">2021年10月2日</time>
+        </td>
+        <td class="section02__tableData">WCB ConferenceのWebサイトをリニューアルしました</td>
+      </tr>
+
+      <tr class="section02__tableRow">
+        <td class="section02__tableData">
+          <time class="section02__tableDate" datetime="2021-09-28">2021年09月28日</time>
+        </td>
+        <td class="section02__tableData">WCB Conference開催決定！</td>
+      </tr>
+    </table>
+
+  </div><!-- /.section02__inner.l-container -->
+</section>
+
+<section class="section03">
+  <div class="section03__inner l-container">
+
+    <h2 class="section03__heading primaryHeading primaryHeading--blue">Speakers</h2>
+
+    <div class="section03__speaker">
+      <div class="section03__speakerContent">
+        <h3 class="section03__speakerName">Mana</h3>
+
+        <p class="section03__speakerText">日本で2年間グラフィックデザイナーとして働いた後、カナダ・バンクーバーにあるWeb制作の学校を卒業。カナダやオーストラリア、イギリスの企業でWebデザイナーとして働きました。現在はWebサイト制作のインストラクターとして教育関連を頑張ってます。</p>
+      </div><!-- /.section03_-speakerContent -->
+
+      <figure class="section03__speakerFigure">
+        <img class="section03__speakerImage" src="/images/mana.jpg" alt="" width="400" height="400">
+      </figure>
+    </div><!-- /.section03__speaker -->
+
+    <div class="section03__speaker">
+      <div class="section03__speakerContent">
+        <h3 class="section03__speakerName">Tatsuya</h3>
+
+        <p class="section03__speakerText">株式会社Sample Web代表。学生時代より独学でWebサイト制作を学び、デザイナーの働きやすい環境を求めて独立。音楽・アート関連のWebサイト制作やアプリ制作をはじめ、イベントの主催や登壇なども行っています。</p>
+      </div><!-- /.section03_-speakerContent -->
+
+      <figure class="section03__speakerFigure">
+        <img class="section03__speakerImage" src="/images/tatsuya.jpg" alt="" width="400" height="400">
+      </figure>
+    </div><!-- /.section03__speaker -->
+
+  </div><!-- /.section03__inner.l-container -->
+</section>
+
+<section class="section04">
+  <div class="section04__inner l-container">
+
+    <h2 class="section04__heading primaryHeading primaryHeading--white">Ticket</h2>
+
+    <form action="#" class="section04__form" method="post">
+      <label class="section04__formLabel" for="name">Name</label>
+      <input class="section04__formInput" id="name" type="text" name="name" placeholder="例：大本 真奈美">
+
+      <label class="section04__formLabel" for="email">Email</label>
+      <input class="section04__formInput" id="email" type="text" name="email" placeholder="例：hello@example.com">
+
+      <input class="section04__formBtn" type="submit" name="send" value="Join Now!">
+    </form>
+
+    <footer class="section04__footer">
+      <div class="section04__footerText">
+        <a class="section04__footerLink" href="mailto:">お問い合わせ</a> / <small class="section04__footerCopyright">&copy; 2021 WCB Conference</small>
+      </div><!-- /.section04__footerText -->
+    </footer>
+
+  </div><!-- /.section04__inner.l-container -->
+</section>
 
 
 <%- include('components/common/_script') %>
